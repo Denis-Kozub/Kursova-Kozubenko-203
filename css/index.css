@@ -1,0 +1,621 @@
+html{
+    scroll-behavior: smooth;
+}
+
+button, body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fullContainer{
+    width: 100%;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+header .container .logo{
+    padding: 15px 0;
+    height: 100px;
+}
+header .container .logo img{
+    height: 100%;
+}
+
+header nav ul{
+    margin-top: 10px;
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+    transition: 0.4s;
+}
+header nav ul li a:hover{
+    width: 100%;
+    height: 100%;
+    background-color: #132E35;
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../img/general_photo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0 0 15px #363235;
+    width: 800px;
+    line-height: 6.2rem;
+    font-weight: 300;
+    background-color: #132E35;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.banner h1 span{
+    background-color: #132E35;
+    display: inline-block;
+    line-height: 6.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #AFB3B7;
+}
+
+.banner p {
+    color: white;
+    width: 50%;
+    text-shadow: 0 0 10px #132E35;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.banner button{
+    background-color: #132E35;
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size:  20px;
+    border-radius: 20px;
+    font-weight: 600;   
+    transition: 0.4s;
+    cursor: pointer;
+}
+.banner button:hover{
+    background-color: #69818D;
+    color: #132E35;
+}
+
+/*ABOUT US*/
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid #132E35;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #132E35;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+section{
+    padding: 100px 0;
+    position: relative;
+}
+#aboutSection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+#aboutSection .cards >div{
+    width: 350px;
+    background-color: #132E35;
+    padding: 35px;
+    color: #AFB3B7;
+    text-align: center;
+    border-radius: 5px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+#aboutSection .cards >div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: rgb(130, 32, 32);
+    padding: 55px;
+    height: auto;
+}
+
+#aboutSection .cards >div .title{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#aboutSection .cards >div p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+#aboutSection .cards >div button{
+    border: 5px solid #69818D;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#aboutSection .cards >div:hover button{
+    background-color: #132E35;
+    color: #fff;
+}
+
+/*Programs*/
+.programs{
+    background-color: #AFB3B7;
+}
+.programs .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    
+}
+.programs .boxContainer .box{
+    background-color: #69818D;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #ccc;
+    position: relative;
+    margin-bottom: 15px;
+}
+.programs .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.programs .boxContainer .box .cardImage::after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage::after{
+    background-image: url(../img/car_for_military.jpg);
+}
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage::after{
+    background-image: url(../img/medicines\ for\ the\ military.jpg);
+}
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage::after{
+    background-image: url(../img/weapons_and_ammunition.jpg);
+}
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage::after{
+    background-image: url(../img/drones.jpg);
+}
+.programs .boxContainer .box:hover .cardImage::after{
+    top: 100%;
+}
+.programs .boxContainer .box .programTitle{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #132E35;
+}
+.programs .boxContainer .box .donationCount{
+    font-size: 13px;
+    font-weight: 600;
+    color: aliceblue;
+    margin-top: 10px;
+}
+.programs .boxContainer .box .donationCount span{
+    color: #132E35;
+}
+.programs .boxContainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: #363235;
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.programs .boxContainer .box button a{
+    color: #dbdbdb;
+    text-decoration: none;
+}
+.programs .boxContainer .box button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #132E35;
+}
+.programs .boxContainer .box button a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #132E35;
+}
+
+/*Gallary*/
+.container-gallery {
+    position: relative;
+    height: 700px;
+}
+
+.container_1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    max-width: 1000px;
+    width: 100%;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+.container_1 .slider .item{
+    /* width: 200px;
+    height: 300px;*/
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.slider .item:nth-child(1),
+.slider .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider .item:nth-child(3){
+    left: 75%;
+}
+.slider .item:nth-child(4){
+    left: calc(75% + 220px);
+}
+.slider .item:nth-child(5){
+    left: calc(75% + 440px);
+}
+.slider .item:nth-child(6){
+    left: calc(75%);
+    opacity: 0;
+}
+.slider .item:nth-child(7){
+    left: calc(75%);
+    opacity: 0;
+}
+.slider .item:nth-child(8){
+    left: calc(75%);
+    opacity: 0;
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+}
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+/*jOIN SECTION*/
+.join{
+    background-color: #132E35;
+    color: #fff;
+}
+.join .joinTitle{
+    font-size: 40px;
+    font-weight: 100;
+}
+.join .joinTitle span{
+    font-weight: 800;
+}
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.join button.joinNow{
+    margin-right: 10px;
+    background-color: #424242;
+    color: white;
+}
+.join button.adoptBtn{
+    background-color: rgb(167, 165, 165);
+}
+
+/*Footer*/
+footer{
+    background-color: #232222;
+    color: #ccc;
+    padding: 50px 0;
+    font-size: 14px;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0  ;
+}
+footer p{
+    margin-bottom: 10px;
+}
+footer .linkContainer ul{
+    list-style-type: none; 
+}
+footer .linkContainer ul li a{
+    text-decoration: none;
+    color: #ccc;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .container .newLetterContainer img{
+    width: 200px;
+    height: 150px;
+    margin-bottom: 11px;
+}
+footer .newLetterContainer input{
+    border-color: transparent;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #211d1d;
+    border-radius: 30px;
+}
+.emailBtn{
+    border-color: transparent;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #211d1d;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.emailBtn:hover{
+    background-color: #363235;
+    color: white;
+}
+
+/*Adaptive*/
+@media screen and (max-width: 1140px){
+    header{
+        height: 19%;
+    }
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+@media  screen and (max-width: 1080px) {
+    header{
+        height: 100px;
+    }
+    .banner h1{
+        margin-top: 200px;
+    }
+    #aboutSection .cards{
+        justify-content: space-around;
+        height: auto;
+    }
+    #aboutsection .cards > div{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .banner{
+        background-position-x: 10%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .programs .boxContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    header nav{
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 35px;
+        border-radius: 5px; 
+    }
+    header .container .logo img{
+        height: 100%;
+        width: 100%;  
+    }
+    header nav::after{
+        top: 17px;
+    }
+    header nav::before{
+        top: 7px;
+    }
+    header nav::after,
+    header nav::before{
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+    }
+
+    header nav ul{
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+    header nav:hover ul{
+        right: -100px;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .banner{
+        background-position-x: 65%;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .banner p,
+    .banner h1{
+        width: 70%; 
+    }
+    #aboutSection .cards >div:hover{
+        width: 350px;
+        margin: 10px 10px 10px 10px;
+    }   
+}
+@media screen and (max-width: 425px) {
+    header .container .logo img{
+        width: 100%;
+    }
+    .banner h1{
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .banner .button{
+        margin-bottom: 10px;
+    }
+    #aboutSection p{
+        text-align: justify;
+    }
+    #aboutSection .cards >div:hover{
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+    .programs .boxContainer{
+        grid-template-columns: 1fr;
+    }
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 320px) {
+    .banner h1{
+        margin-top: 100px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+}
