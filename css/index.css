@@ -209,6 +209,59 @@ section{
     background-color: #132E35;
     color: #fff;
 }
+#aboutSection .cards >div button a{
+    text-decoration: none;
+    color:#211d1d;
+}
+#aboutSection .cards >div button a:hover{
+    color: white;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popup {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 700px;
+    height: 700px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 70%;
+    margin-bottom: 10px;
+}
+.closebtn{
+    width: 200px;
+    height: 50px;
+    border: 5px solid #69818D;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.closebtn:hover{
+    background-color: #132E35;
+    color: #fff;
+}
+
+
 
 /*Programs*/
 .programs{

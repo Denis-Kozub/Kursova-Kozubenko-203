@@ -81,20 +81,27 @@
                         Зв'яжіться з нами і ми допоможемо приєднатися до нас
                     </p>
                     <button>
-                        Become Now
+                        <a href="#JoinSection">Become Now</a>
                     </button>
                 </div>
 
                 <div class="scholarshipBox">
-                    <div class="title">Give scholarship</div>
+                    <div class="title">Helping project</div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur.
+                       Проект тільки почав свою роботу тому допоможи розробникам
                     </p>
-                    <button>
-                        Give Immediately
+                    <button onclick="showForm()">
+                        Helping project
                     </button>
                 </div>
-
+                <script src="transition.js"></script>
+            </div>
+            <div class="overlay" id="overlay">
+                <div class="popup">
+                    <img src="./img/photo1700119857.jpeg" alt="Popup Image">
+                    <h2>5457 0822 9693 8868</h2>
+                    <button onclick="hideForm()" class="closebtn">Close</button>
+                </div>
             </div>
         </div>
     </section>
